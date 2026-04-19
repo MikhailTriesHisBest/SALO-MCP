@@ -1,5 +1,7 @@
 # SALO MCP
 
+SALO stands for "Simple App Launcher".
+
 SALO MCP is a minimal Model Context Protocol (MCP) server for Windows that manages and launches local applications for MCP-compatible AI clients.
 
 ## Features
@@ -15,10 +17,10 @@ SALO MCP is a minimal Model Context Protocol (MCP) server for Windows that manag
 
 ## Setup
 
-1. Open a terminal in `C:\Projects\SALO MCP\`
+1. Open a terminal in `C:\path\to\project\`
 2. Create and activate a venv:
    python -m venv .venv
-   .venv\Scripts\activate
+   .venv\\Scripts\\activate
 3. Install dependencies:
    pip install -r requirements.txt
 4. Run the server (stdio mode):
@@ -32,8 +34,8 @@ Add to `%APPDATA%\Claude\claude_desktop_config.json` under `mcpServers`:
 {
   "mcpServers": {
     "salo-mcp": {
-      "command": "C:\\Projects\\SALO MCP\\.venv\\Scripts\\python.exe",
-      "args": ["C:\\Projects\\SALO MCP\\server.py"]
+      "command": "C:\\path\\to\\project\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\path\\to\\project\\server.py"]
     }
   }
 }
